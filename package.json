@@ -1,0 +1,44 @@
+{
+  "name": "croncraft",
+  "version": "1.0.0",
+  "description": "Developer-First Cron & Schedule Linter, Multi-Timezone Collision Detector, Execution Waterfall Simulator & Bento Grid Studio",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "croncraft": "dist/bin.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node /Users/jatinsharma/.local/bin/lib/node_modules/typescript/bin/tsc",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "start": "node dist/bin.js",
+    "studio": "node dist/bin.js studio"
+  },
+  "keywords": [
+    "cron",
+    "crontab",
+    "cron-parser",
+    "schedule",
+    "scheduler",
+    "cron-linter",
+    "collision-detector",
+    "dev-tools",
+    "bento-grid",
+    "timezone",
+    "observability"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghav1924/croncraft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raghav1924/croncraft/issues"
+  },
+  "homepage": "https://github.com/raghav1924/croncraft#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
